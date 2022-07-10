@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_add%}
+    <link rel = 'stylesheet' type='text/css' href='{% static "Our_resume/css/main.css" %}'>
+{% endblock %}
+{% block title%}Упс...{% endblock %}
+{%block content%}
+    <table class="tiktaktoe">
+        <thead>
+            <h2>404 кажется тут ничего нет</h2>
+        </thead>
+        <tbody>
+        <tr>
+          <td class = 'cell'>1</td>
+          <td class = 'cell'>2</td>
+          <td class = 'cell'>3</td>
+        </tr>
+        <tr>
+          <td class = 'cell'>4</td>
+          <td class = 'cell'>5</td>
+          <td class = 'cell'>6</td>
+        </tr>
+        <tr>
+          <td class = 'cell'>7</td>
+          <td class = 'cell'>8</td>
+          <td class = 'cell'>9</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
