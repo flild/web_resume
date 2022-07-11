@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from config import SECRET_KEY_DJANGO
 import os, sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +24,7 @@ sys.path.insert(0,os.path.join(PROJECT_ROOT,'apps'))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8p21c&z=^((*at_9rra4ngrqd9baivl65w#@=rmh%!7(4#a=7e'
+SECRET_KEY = SECRET_KEY_DJANGO
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
